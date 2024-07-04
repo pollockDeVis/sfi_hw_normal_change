@@ -90,10 +90,10 @@ Uneuqal model in barabasialbert network with the proportion of altruistic agents
 
 #### Erdos renyi network
 Very uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.5
-![Image](/plots/very_unequal_erdos_renyi_0.3.gif)
+![Image](/plots/very_unequal_erdos_renyi_0.5.gif)
 
 Very uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.3
-![Image](/plots/very_unequal_erdos_renyi_0.5.gif)
+![Image](/plots/very_unequal_erdos_renyi_0.3.gif)
 
 
 #### Barabasi Albert Network
