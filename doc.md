@@ -54,6 +54,48 @@ Kago and Venkataraman (2023) discussed the blurred lines between altruism and eg
 
 ## Results & Discussion
 
+The key idea of this experiment was to see whether a small percentage of altruistic agents can influence others to become altruistic and shift the norm of the society. We have run the model with different initial wealth distributions and network structures. Interestingly, a minority group of altruistic agents can influence the majority to become altruistic when the wealth distribution is unequal. It doesn't work when wealth is equally distributed at the start or if the wealth is highly unequally distributed (pareto distribution). The network structure also plays a crucial role in the spread of altruism. The Barabasi-Albert network is more effective in spreading altruism compared to the Erdos-Renyi network. The main results are displayed below and the results for all other experiments can be found in the appendix.
+
+### Unequal Distribution
+
+#### Erdos renyi network
+Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.43
+![Image](./plots/unequal_erdos_renyi_0.43.gif)
+
+
+
+#### Barabasi Albert Network
+Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
+![Image](./plots/unequal_barabasi_albert_0.39.gif)
+
+
+
+## Code Availability
+Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
+
+## References
+- Axelrod, R., & Hamilton, W. D. (1981). The evolution of cooperation. Science, 211(4489), 1390-1396.
+
+- Fowler, J. H., & Christakis, N. A. (2010). Cooperative behavior cascades in human social networks. Proceedings of the National Academy of Sciences, 107(12), 5334-5338.
+
+- Kago, K., & Venkataraman, P. (2023). Possibility of conjunction between altruism and egoism. Humanities and Social Sciences Communications, 10(1), 1-5.
+
+- Liu, P. P., Safin, V., Yang, B., & Luhmann, C. C. (2015). Direct and indirect influence of altruistic behavior in a social network. PloS one, 10(10), e0140357.
+
+- Rand, D. G., Arbesman, S., & Christakis, N. A. (2011). Dynamic social networks promote cooperation in experiments with humans. Proceedings of the National Academy of Sciences, 108(48), 19193-19198.
+
+- Rilling, J. K., Gutman, D. A., Zeh, T. R., Pagnoni, G., Berns, G. S., & Kilts, C. D. (2002). A neural basis for social cooperation. Neuron, 35(2), 395-405.
+
+- Sun, Z., Ye, C., He, Z., & Yu, W. (2020). Behavioral intention promotes generalized reciprocity: Evidence from the dictator game. Frontiers in Psychology, 11, 772.
+
+- Trivers, R. L. (1971). The evolution of reciprocal altruism. The Quarterly review of biology, 46(1), 35-57.
+
+
+
+
+## Appendix
+
+
 ### Equal Distribution
 #### Erdos renyi network
 Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.47
@@ -103,40 +145,5 @@ Very unequal wealth distribution in barabasi albert network with the proportion 
 Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.38
 ![Image](./plots/very_unequal_barabasi_albert_0.38.gif)
 
-## Code Availability
-Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
 
-## References
-- Axelrod, R., & Hamilton, W. D. (1981). The evolution of cooperation. Science, 211(4489), 1390-1396.
-
-- Fowler, J. H., & Christakis, N. A. (2010). Cooperative behavior cascades in human social networks. Proceedings of the National Academy of Sciences, 107(12), 5334-5338.
-
-- Kago, K., & Venkataraman, P. (2023). Possibility of conjunction between altruism and egoism. Humanities and Social Sciences Communications, 10(1), 1-5.
-
-- Liu, P. P., Safin, V., Yang, B., & Luhmann, C. C. (2015). Direct and indirect influence of altruistic behavior in a social network. PloS one, 10(10), e0140357.
-
-- Rand, D. G., Arbesman, S., & Christakis, N. A. (2011). Dynamic social networks promote cooperation in experiments with humans. Proceedings of the National Academy of Sciences, 108(48), 19193-19198.
-
-- Rilling, J. K., Gutman, D. A., Zeh, T. R., Pagnoni, G., Berns, G. S., & Kilts, C. D. (2002). A neural basis for social cooperation. Neuron, 35(2), 395-405.
-
-- Sun, Z., Ye, C., He, Z., & Yu, W. (2020). Behavioral intention promotes generalized reciprocity: Evidence from the dictator game. Frontiers in Psychology, 11, 772.
-
-- Trivers, R. L. (1971). The evolution of reciprocal altruism. The Quarterly review of biology, 46(1), 35-57.
-
-
-
-
-## Table
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-
-# Insert image from local file
-![Image](./change.gif)
 
