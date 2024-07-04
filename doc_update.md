@@ -57,51 +57,53 @@ Kago and Venkataraman (2023) discussed the blurred lines between altruism and eg
 ### Equal Distribution
 
 #### Erdos renyi network
-Euqal model in erdos renyi network with the proportion of altruistic agents is 0.47
+Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.47
 ![Image](/plots/equal_erdos_renyi_0.47.gif)
-Euqal model in erdos renyi network with the proportion of altruistic agents is 0.3
+Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
 ![Image](/plots/equal_erdos_renyi_0.3.gif)
 
 #### Barabasi Albert Network
-Euqal model in barabasi albert network with the proportion of altruistic agents is 0.58
+Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.58
 ![Image](/plots/equal_barabasi_albert_0.58.gif)
 
-Euqal model in barabasi albert network with the proportion of altruistic agents is 0.2
+Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.2
 ![Image](/plots/equal_barabasi_albert_0.2.gif)
 
 
 ### Unequal Distribution
 
 #### Erdos renyi network
-Uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.43
+Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.43
 ![Image](/plots/unequal_erdos_renyi_0.43.gif)
 
-Uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.13
+Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.13
 ![Image](/plots/unequal_erdos_renyi_0.13.gif)
 
 #### Barabasi Albert Network
-Uneuqal model in barabasi albert network with the proportion of altruistic agents is 0.39
+Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
 ![Image](/plots/unequal_barabasi_albert_0.39.gif)
 
-Uneuqal model in barabasialbert network with the proportion of altruistic agents is 0.35
+Unequal wealth distribution in barabasialbert network with the proportion of altruistic agents is 0.35
 ![Image](/plots/unequal_barabasi_albert_0.35.gif)
 
 ### Very Unequal Distribution
 
 #### Erdos renyi network
-Very uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.5
+Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.5
 ![Image](/plots/very_unequal_erdos_renyi_0.5.gif)
 
-Very uneuqal model in erdos renyi network with the proportion of altruistic agents is 0.3
+Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
 ![Image](/plots/very_unequal_erdos_renyi_0.3.gif)
 
 
 #### Barabasi Albert Network
-Very uneuqal model in barabasialbert network with the proportion of altruistic agents is 0.38
+Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.55
+![Image](/plots/very_unequal_barabasi_albert_0.55.gif)
+
+Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.38
 ![Image](/plots/very_unequal_barabasi_albert_0.38.gif)
 
-Very uneuqal model in barabasialbert network with the proportion of altruistic agents is 0.55
-![Image](/plots/very_unequal_barabasi_albert_0.55.gif)
+
 
 ## Code Availability
 Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
@@ -122,21 +124,4 @@ Code for the model is open-source and can be found [here](https://github.com/pol
 - Sun, Z., Ye, C., He, Z., & Yu, W. (2020). Behavioral intention promotes generalized reciprocity: Evidence from the dictator game. Frontiers in Psychology, 11, 772.
 
 - Trivers, R. L. (1971). The evolution of reciprocal altruism. The Quarterly review of biology, 46(1), 35-57.
-
-
-
-
-## Table
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-
-# Insert image from local file
-![Image](./change.gif)
 

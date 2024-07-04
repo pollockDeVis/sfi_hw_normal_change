@@ -59,10 +59,49 @@ Kago and Venkataraman (2023) discussed the blurred lines between altruism and eg
 Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.47
 ![Image](./plots/equal_erdos_renyi_0.47.gif)
 
+Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
+![Image](./plots/equal_erdos_renyi_0.3.gif)
+
+#### Barabasi Albert Network
+Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.58
+![Image](./plots/equal_barabasi_albert_0.58.gif)
+
+Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.2
+![Image](./plots/equal_barabasi_albert_0.2.gif)
+
 
 ### Unequal Distribution
 
+#### Erdos renyi network
+Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.43
+![Image](./plots/unequal_erdos_renyi_0.43.gif)
+
+Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.13
+![Image](./plots/unequal_erdos_renyi_0.13.gif)
+
+#### Barabasi Albert Network
+Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
+![Image](./plots/unequal_barabasi_albert_0.39.gif)
+
+Unequal wealth distribution in barabasialbert network with the proportion of altruistic agents is 0.35
+![Image](./plots/unequal_barabasi_albert_0.35.gif)
+
 ### Very Unequal Distribution
+
+#### Erdos renyi network
+Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.5
+![Image](./plots/very_unequal_erdos_renyi_0.5.gif)
+
+Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
+![Image](./plots/very_unequal_erdos_renyi_0.3.gif)
+
+
+#### Barabasi Albert Network
+Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.55
+![Image](./plots/very_unequal_barabasi_albert_0.55.gif)
+
+Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.38
+![Image](./plots/very_unequal_barabasi_albert_0.38.gif)
 
 ## Code Availability
 Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
