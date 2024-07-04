@@ -1,0 +1,223 @@
+<h1 id="from-egoism-to-altruism">From Egoism to Altruism</h1>
+<p><strong>Palok (Paul) Biswas, Xiaojie Niu</strong></p>
+<p>We investigate the conditions under which a society initially dominated by <em>selfish (egoist)</em> individuals can
+    evolve to adopt <em>altruistic</em> behaviour as the norm. Inspired by <em>positive</em> and <em>normative</em>
+    economics concepts, we create an artificial economy initially characterized by egoism and explore how it can
+    transition to one where altruism prevails. We examine factors such as the <em>initial proportion of altruistic
+        individuals</em>, <em>wealth distribution</em>, and <em>social network structures</em>. Two network types are
+    used: <em>Barabasi-Albert</em>, which likely clusters of individuals, and Erdos-Renyi, which simulates small-world
+    networks. Some modelled dynamics include <em>wealth growth,</em> <em>trade</em>, <em>social influence</em>,
+    <em>wealth redistribution by altruists</em>, and <em>employment changes</em>. When approximately 80% of the
+    population in a society adopts a new behavior, we consider that the society has effectively shifted to a new norm.
+</p>
+<h2 id="insights-from-the-literature">Insights from the Literature</h2>
+<h5 id="network-effects-and-social-influence">Network Effects and Social Influence</h5>
+<p>Liu et al. (2015) demonstrated the direct social influence of generosity and selfishness, finding that while
+    individuals reciprocate generosity, selfish behaviour tends to have a more substantial impact by shaping
+    expectations about future interactions. Fowler and Christakis (2010) found that cooperative behaviour can cascade
+    through social networks, influencing subsequent acts of cooperation up to three degrees of separation. Additionally,
+    Rand et al. (2011) highlighted that dynamic social networks, where individuals frequently update their social
+    connections, sustain high levels of cooperation by enabling cooperators to connect and disconnect from defectors.
+    These findings suggest that network structure and social influence play crucial roles in propagating altruistic
+    behaviours. This will inform our analysis of network dynamics in the Barabasi-Albert and Erdos-Renyi models.</p>
+<h5 id="agents-reciprocate-if-benefited-by-altruism">Agents Reciprocate if Benefited by Altruism</h5>
+<p>Trivers (1971) offered a model of reciprocal altruism, showing how psychological traits like trust, sympathy, and
+    guilt regulate altruistic behaviour and deter cheating. In a neurobiological context, Rilling et al. (2002) showed
+    that cooperation activates brain regions associated with rewards, reinforcing reciprocal altruism. Axelrod and
+    Hamilton (1981) demonstrated through game theory and evolutionary models that reciprocity-based cooperation can
+    persist as an evolutionarily stable strategy even in asocial environments. These insights emphasize that individuals
+    are likely to continue altruistic behaviour if they perceive reciprocal benefits, highlighting the importance of
+    psychological and neurobiological factors in facilitating the spread of altruism.</p>
+<h5 id="egoism-and-altruism-may-originate-from-a-common-motivational-source">Egoism and Altruism May Originate from a
+    Common Motivational Source</h5>
+<p>Kago and Venkataraman (2023) discussed the blurred lines between altruism and egoism, suggesting that these
+    behaviours may originate from a common motivational source but manifest differently based on context. These findings
+    collectively inform our investigation into the transition from egoism to altruism, emphasizing the roles of social
+    influence, network dynamics, psychological factors, and the potential for cascading behaviours and evolving stable
+    strategies in fostering altruistic norms.</p>
+<h2 id="key-modelling-assumptions">Key Modelling Assumptions</h2>
+<ol>
+    <li>
+        <p><strong><strong>Wealth Generation</strong></strong>: Wealth grows at a fixed rate, emulating returns on
+            investment. Salary is proportional to the initial wealth, and expenditure varies between a minimum and
+            maximum expenditure per timestep.</p>
+    </li>
+    <li>
+        <p><strong><strong>Trade</strong></strong>: A fixed network structure is used throughout the simulation run. Two
+            network structures are considered: Barabasi-Albert and Erdos-Renyi networks. Agents randomly select a
+            neighbour for trade interactions, reflecting the stochastic nature of market interactions or social
+            exchanges. Trading only occurs when the agent has a positive wealth. During the trade, agents transfer a
+            predefined proportion of their wealth to the selected neighbour, simulating market transactions or resource
+            sharing.</p>
+    </li>
+    <li>
+        <p><strong><strong>Sufficiency Threshold</strong></strong>: Agents are considered to have sufficient wealth if
+            their wealth is above a certain threshold. Agents below this Threshold will receive donations from
+            altruistic agents.</p>
+    </li>
+    <li>
+        <p><strong><strong>Societal Influence</strong></strong>: Agents are influenced by the majority behaviour of
+            their neighbours. An agent adopts the majority norm with a certain probability.</p>
+    </li>
+    <li>
+        <p><strong><strong>Altruistic Wealth Redistribution</strong></strong>: There is a donation pool where
+            <strong><strong>altruistic</strong></strong> agents can donate a fixed proportion of their wealth. This
+            donation pool is distributed equally among all agents whose wealth falls below a sufficiency threshold. This
+            redistribution mechanism simulates social welfare programs.
+        </p>
+    </li>
+    <li>
+        <p><strong><strong>Employment Dynamics</strong></strong>: Agents have an 80% chance of being employed initially.
+            Unemployed agents have a probability of finding a job, while employed agents have a probability of being
+            laid off.</p>
+    </li>
+    <li>
+        <p><strong><strong>Norm Change Probability</strong></strong>: Agents have a probability of changing their norm
+            to the majority norm of their neighbours. Agents also have a probability of changing their norms when they
+            receive donations from altruistic agents.</p>
+    </li>
+</ol>
+<h2 id="experimental-setup">Experimental Setup</h2>
+<ol>
+    <li>
+        <p><strong><strong>Initial Wealth</strong></strong>: Each agent is initialized with a predefined amount of
+            wealth. The distribution of this initial wealth can be:</p>
+        <ul>
+            <li>
+                <p>Equal</p>
+            </li>
+            <li>
+                <p>Unequal (exponential distribution)</p>
+            </li>
+            <li>
+                <p>Very Unequal (Pareto distribution)</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong><strong>Initial Proportion of Altruistic Agents</strong></strong>: A small percentage of agents are
+            altruistic (minority) at the start of the model run.</p>
+    </li>
+    <li>
+        <p><strong><strong>Network Structure</strong></strong>: Two network structures are considered:</p>
+        <ul>
+            <li>
+                <p>Barabasi-Albert</p>
+            </li>
+            <li>
+                <p>Erdos-Renyi</p>
+            </li>
+        </ul>
+    </li>
+</ol>
+<h2 id="results--discussion">Results &amp; Discussion</h2>
+<p>The key idea of this experiment was to see whether a small percentage of altruistic agents can influence others to
+    become altruistic and shift the norm of the society. We have run the model with different initial wealth
+    distributions and network structures. Interestingly, a minority group of altruistic agents can influence the
+    majority to become altruistic when the wealth distribution is unequal. It doesn&#39;t work when wealth is equally
+    distributed at the start or if the wealth is highly unequally distributed (pareto distribution). The network
+    structure also plays a crucial role in the spread of altruism. The Barabasi-Albert network is more effective in
+    spreading altruism compared to the Erdos-Renyi network. The main results are displayed below and the results for all
+    other experiments can be found in the appendix.</p>
+<h3 id="unequal-distribution">Unequal Distribution</h3>
+<h4 id="erdos-renyi-network">Erdos renyi network</h4>
+<p>Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.43
+    <img src="./plots/unequal_erdos_renyi_0.43.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h4 id="barabasi-albert-network">Barabasi Albert Network</h4>
+<p>Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
+    <img src="./plots/unequal_barabasi_albert_0.39.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h2 id="future-directions">Future Directions</h2>
+<p>Future research could explore a continuum of selfish and altruistic behaviour instead of treating them as discrete
+    entities, offering a more nuanced understanding of the motivational drivers behind these behaviours. This approach
+    would allow for investigating how varying degrees of altruism and egoism coexist and influence societal dynamics.
+    Additionally, incorporating dynamic networks where agents form connections based on trust and can differentiate
+    between defectors and cooperators would provide a richer simulation environment. Agents could have memories of past
+    interactions, influencing their future decisions and fostering trust-based relationships. Further, implementing a
+    utility function where agents derive utility from altruistic acts—where this utility exceeds the sum of their
+    wealth—would add a layer of complexity by integrating psychological satisfaction and social rewards into the
+    decision-making process. </p>
+<h2 id="code-availability">Code Availability</h2>
+<p>Code for the model is open-source and can be found <a
+        href="https://github.com/pollockDeVis/sfi_hw_normal_change">here</a></p>
+<h2 id="references">References</h2>
+<ul>
+    <li>
+        <p>Axelrod, R., &amp; Hamilton, W. D. (1981). The evolution of cooperation. Science, 211(4489), 1390-1396.</p>
+    </li>
+    <li>
+        <p>Fowler, J. H., &amp; Christakis, N. A. (2010). Cooperative behavior cascades in human social networks.
+            Proceedings of the National Academy of Sciences, 107(12), 5334-5338.</p>
+    </li>
+    <li>
+        <p>Kago, K., &amp; Venkataraman, P. (2023). Possibility of conjunction between altruism and egoism. Humanities
+            and Social Sciences Communications, 10(1), 1-5.</p>
+    </li>
+    <li>
+        <p>Liu, P. P., Safin, V., Yang, B., &amp; Luhmann, C. C. (2015). Direct and indirect influence of altruistic
+            behavior in a social network. PloS one, 10(10), e0140357.</p>
+    </li>
+    <li>
+        <p>Rand, D. G., Arbesman, S., &amp; Christakis, N. A. (2011). Dynamic social networks promote cooperation in
+            experiments with humans. Proceedings of the National Academy of Sciences, 108(48), 19193-19198.</p>
+    </li>
+    <li>
+        <p>Rilling, J. K., Gutman, D. A., Zeh, T. R., Pagnoni, G., Berns, G. S., &amp; Kilts, C. D. (2002). A neural
+            basis for social cooperation. Neuron, 35(2), 395-405.</p>
+    </li>
+    <li>
+        <p>Sun, Z., Ye, C., He, Z., &amp; Yu, W. (2020). Behavioral intention promotes generalized reciprocity: Evidence
+            from the dictator game. Frontiers in Psychology, 11, 772.</p>
+    </li>
+    <li>
+        <p>Trivers, R. L. (1971). The evolution of reciprocal altruism. The Quarterly review of biology, 46(1), 35-57.
+        </p>
+    </li>
+</ul>
+<h2 id="appendix">Appendix</h2>
+<h3 id="equal-distribution">Equal Distribution</h3>
+<h4 id="erdos-renyi-network-1">Erdos renyi network</h4>
+<p>Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.47
+    <img src="./plots/equal_erdos_renyi_0.47.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
+    <img src="./plots/equal_erdos_renyi_0.3.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h4 id="barabasi-albert-network-1">Barabasi Albert Network</h4>
+<p>Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.58
+    <img src="./plots/equal_barabasi_albert_0.58.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Equal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.2
+    <img src="./plots/equal_barabasi_albert_0.2.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h3 id="unequal-distribution-1">Unequal Distribution</h3>
+<h4 id="erdos-renyi-network-2">Erdos renyi network</h4>
+<p>Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.43
+    <img src="./plots/unequal_erdos_renyi_0.43.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.13
+    <img src="./plots/unequal_erdos_renyi_0.13.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h4 id="barabasi-albert-network-2">Barabasi Albert Network</h4>
+<p>Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
+    <img src="./plots/unequal_barabasi_albert_0.39.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Unequal wealth distribution in barabasialbert network with the proportion of altruistic agents is 0.35
+    <img src="./plots/unequal_barabasi_albert_0.35.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h3 id="very-unequal-distribution">Very Unequal Distribution</h3>
+<h4 id="erdos-renyi-network-3">Erdos renyi network</h4>
+<p>Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.5
+    <img src="./plots/very_unequal_erdos_renyi_0.5.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Very unequal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.3
+    <img src="./plots/very_unequal_erdos_renyi_0.3.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<h4 id="barabasi-albert-network-3">Barabasi Albert Network</h4>
+<p>Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.55
+    <img src="./plots/very_unequal_barabasi_albert_0.55.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
+<p>Very unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.38
+    <img src="./plots/very_unequal_barabasi_albert_0.38.gif" alt="Image" style="max-width: 100%; height: auto;">
+</p>
