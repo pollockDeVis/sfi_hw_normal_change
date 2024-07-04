@@ -68,7 +68,8 @@ Unequal wealth distribution in erdos renyi network with the proportion of altrui
 Unequal wealth distribution in barabasi albert network with the proportion of altruistic agents is 0.39
 ![Image](./plots/unequal_barabasi_albert_0.39.gif)
 
-
+## Future Directions
+Future research could explore a continuum of selfish and altruistic behaviour instead of treating them as discrete entities, offering a more nuanced understanding of the motivational drivers behind these behaviours. This approach would allow for investigating how varying degrees of altruism and egoism coexist and influence societal dynamics. Additionally, incorporating dynamic networks where agents form connections based on trust and can differentiate between defectors and cooperators would provide a richer simulation environment. Agents could have memories of past interactions, influencing their future decisions and fostering trust-based relationships. Further, implementing a utility function where agents derive utility from altruistic acts—where this utility exceeds the sum of their wealth—would add a layer of complexity by integrating psychological satisfaction and social rewards into the decision-making process. 
 
 ## Code Availability
 Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
