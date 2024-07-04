@@ -55,7 +55,9 @@ Kago and Venkataraman (2023) discussed the blurred lines between altruism and eg
 ## Results & Discussion
 
 ### Equal Distribution
-![Image](./plots/equal_erdos_renyi_0.5.gif)
+#### Erdos renyi network
+Equal wealth distribution in erdos renyi network with the proportion of altruistic agents is 0.47
+![Image](./plots/equal_erdos_renyi_0.47.gif)
 
 
 ### Unequal Distribution
