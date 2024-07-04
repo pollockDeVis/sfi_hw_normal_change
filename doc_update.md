@@ -97,6 +97,11 @@ Very uneuqal model in erdos renyi network with the proportion of altruistic agen
 
 
 #### Barabasi Albert Network
+Very uneuqal model in barabasialbert network with the proportion of altruistic agents is 0.38
+![Image](/plots/very_unequal_barabasi_albert_0.38.gif)
+
+Very uneuqal model in barabasialbert network with the proportion of altruistic agents is 0.55
+![Image](/plots/very_unequal_barabasi_albert_0.55.gif)
 
 ## Code Availability
 Code for the model is open-source and can be found [here](https://github.com/pollockDeVis/sfi_hw_normal_change)
